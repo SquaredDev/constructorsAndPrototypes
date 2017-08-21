@@ -8,13 +8,14 @@
 
 // Dog Constructor & Prototype
 function Dog () {
-  this.status
-  this.color
-  this.hungry
+  this.status = 'normal'
+  this.color = 'black'
+  this.hungry = true
   this.owner
 }
 
 var sadie = new Dog()
+sadie.hungry = false
 var moonshine = new Dog()
 var atticus = new Dog()
 
@@ -29,13 +30,18 @@ var atticus = new Dog()
 
 // Human Constructor & Prototype
 function Human () {
-  this.pet
-  this.feed
-  this.cool
+  this.pet = function (dog) {
+    dog.status = 'happy'
+  }
+  this.feed = function (dog) {
+    dog.hungry = false
+  }
+  this.cool = false
 }
 
 var mason = new Human
 var julia = new Human
+julia.cool = true
 
 // Instances of Human
 // Needed: mason, julia
