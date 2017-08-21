@@ -9,13 +9,14 @@
 // Dog Constructor & Prototype
 function Dog () {
   this.status = 'normal'
-  this.color = 'black'
+  this.color = 'gold'
   this.hungry = true
   this.owner
 }
 
 var sadie = new Dog()
 sadie.hungry = false
+sadie.color = 'black'
 var moonshine = new Dog()
 var atticus = new Dog()
 
